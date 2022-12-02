@@ -1,0 +1,17 @@
+public class SwapTwoNumber {
+
+    public static void main(String[] args) {
+
+        int a = 30, b = 40, c;
+
+        System.out.println("--Before swaping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+        c = a;
+        a = b;
+        b = c;
+        System.out.println("--After swaping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+    }
+}
