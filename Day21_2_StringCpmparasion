@@ -1,0 +1,14 @@
+public class StringCpmparasion {
+    public static void main(String[] args) {
+        String a = "ahmad"; // literal
+        // String b = "Ahmad";
+        String b = new String("ahmad");
+        if (a.equals(b)) {// another way a==b
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
+    }
+
+}
