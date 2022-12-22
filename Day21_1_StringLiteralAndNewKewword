@@ -1,0 +1,14 @@
+//String in Java
+
+public class StringLiteral {
+    public static void main(String[] args) {
+        String a = "Tausif ";// literal
+        System.out.println(a);
+        String b = new String("Zaid");
+        System.out.println(b);
+        a = a.concat("Ahmad");
+        System.out.println(a);
+
+    }
+
+}
