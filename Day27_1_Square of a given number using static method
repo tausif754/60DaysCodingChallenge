@@ -1,0 +1,11 @@
+//Java Program to get the square of a given number using the static method  
+public class Calculate {
+    static int cube(int x) {
+        return x * x;
+    }
+
+    public static void main(String args[]) {
+        int ans = Calculate.cube(6);
+        System.out.println(ans);
+    }
+}
