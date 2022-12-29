@@ -1,0 +1,27 @@
+import javax.sound.sampled.SourceDataLine;
+
+public class Animal {
+    String color;
+
+    void eat() {
+        System.out.println("eat");
+
+    }
+
+    void breath() {
+        System.out.println("breath");
+    }
+
+    class Dog extends Animal {
+        void barks() {
+            System.out.println("barks");
+        }
+    }
+
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        a.eat();
+
+    }
+
+}
