@@ -1,0 +1,21 @@
+class Test {
+    public static void main(String[] args) {
+        C c = new C();
+        c.m1();
+
+    }
+}
+
+class P {
+    String s = "parent variavle";
+}
+
+class C extends P {
+    String s = "child variable";
+
+    public void m1() {
+        System.out.println(s);
+        System.out.println(this.s);
+        System.out.println(super.s);
+    }
+}
