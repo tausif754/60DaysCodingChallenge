@@ -1,0 +1,27 @@
+
+public class Test1 {
+    public static void main(String[] args) {
+        Queen q = new Queen();
+        q.moves();
+        // King k = new King();
+        // k.moves();
+
+    }
+
+}
+
+interface chessPlayer {
+    void moves();
+}
+
+class Queen implements chessPlayer {
+    public void moves() {
+        System.out.println("up,down, left,right,diogonal(all 4 direction)");
+    }
+}
+
+class King implements chessPlayer {
+    public void moves() {
+        System.out.println("up,down, left,right,diogonal(by 1 step)");
+    }
+}
