@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SumOfNaturalNo {
+    public static void main(String[] args) {
+        // int n = 5;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any number: ");
+        int n = sc.nextInt();
+        System.out.println(calcSum(n));
+
+    }
+
+    public static int calcSum(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        int snm1 = calcSum(n - 1);
+        int sn = n + snm1;
+        return sn;
+    }
+
+}
