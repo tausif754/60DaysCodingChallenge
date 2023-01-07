@@ -1,0 +1,32 @@
+public class Sub_Matrix {
+    public static void main(String[] args) {
+        int rows, cols;
+        int a[][] = {
+                { 10, 20, 30 },
+                { 3, 20, 11 },
+                { 10, 21, 30 }
+        };
+
+        int b[][] = {
+                { 5, 10, 25 },
+                { 2, 20, 11 },
+                { 10, 11, 10 }
+        };
+        rows = a.length;
+        cols = a[0].length;
+        int diff[][] = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                diff[i][j] = a[i][j] - b[i][j];
+            }
+        }
+
+        System.out.println("Subtraction of two matrices: ");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(diff[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
