@@ -1,0 +1,27 @@
+
+
+//User function Template for Java
+
+class Solution {
+    //Function to reverse every sub-array group of size k.
+    void reverseInGroups(ArrayList<Integer> arr, int n, int k) {
+        int low=0,high=k-1;
+        while(high<=n-1){
+         reverseArr(arr,low,high);
+            low+=k;
+            high+=k;
+        }
+         reverseArr(arr,low,n-1);
+    }
+    void reverseArr(ArrayList<Integer> arr,int si,int ei){
+        while(si<=ei){
+            int temp=arr.get(si);
+            arr.set(si,arr.get(ei));
+            arr.set(ei,temp);
+            si++;
+            ei--;
+        }
+    
+            
+        }
+}
