@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MaxArrList {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(100);
+        list.add(208);
+        list.add(307);
+        list.add(44);
+        list.add(56);
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
+
+    }
+
+}
