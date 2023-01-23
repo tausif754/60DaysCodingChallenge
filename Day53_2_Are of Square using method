@@ -1,0 +1,22 @@
+class Square1 {
+
+    int side;
+
+    void insert(int a) {
+        side = a;
+        side = a;
+
+    }
+
+    void calculateArea() {
+        System.out.println(side * side);
+    }
+}
+
+class Square {
+    public static void main(String args[]) {
+        Square1 r1 = new Square1();
+        r1.insert(11);
+        r1.calculateArea();
+    }
+}
