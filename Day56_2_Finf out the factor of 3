@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FindFactor {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter any number:");
+        int n = in.nextInt();
+        System.out.println("Factors of 3 =");
+        test(n);
+    }
+
+    public static void test(int n) {
+        System.out.print(n + " = ");
+        int result = n;
+        while (result % 3 == 0) {
+            System.out.print("3 * ");
+            result = result / 3;
+        }
+        System.out.print(result);
+    }
+}
