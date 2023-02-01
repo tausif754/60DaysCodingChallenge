@@ -1,0 +1,8 @@
+class DoubleToString {
+    public static void main(String args[]) {
+        double d = 38.8;
+
+        String s = String.valueOf(d);
+        System.out.println(s);
+    }
+}
