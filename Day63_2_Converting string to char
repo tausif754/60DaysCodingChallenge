@@ -1,0 +1,7 @@
+public class StringToChar {
+    public static void main(String args[]) {
+        String s = "Tausif";
+        char c = s.charAt(5);// returns h
+        System.out.println("last character is: " + c);
+    }
+}
