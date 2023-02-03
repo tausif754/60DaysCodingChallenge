@@ -1,0 +1,15 @@
+class Student {
+
+}
+
+public class ObjectToString {
+
+    public static void main(String args[]) {
+        Student s = new Student();
+        String str = s.toString();
+        String s1 = String.valueOf(str);
+        System.out.println(s);
+        System.out.println(s1);
+    }
+
+}
