@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class CalculateDiscount {
+    public static void main(String args[]) {
+
+        double dis, amount, markedprice, s;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter marked price ");
+
+        markedprice = sc.nextDouble();
+
+        System.out.println("Enter discount percentage ");
+
+        dis = sc.nextDouble();
+
+        s = 100 - dis;
+
+        amount = (s * markedprice) / 100;
+
+        System.out.println("amount after discount=" + amount);
+
+    }
+}
