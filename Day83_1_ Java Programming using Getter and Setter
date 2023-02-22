@@ -1,0 +1,34 @@
+import java.util.*;
+
+class OOPS {
+    public static void main(String[] args) {
+        Pen p1 = new Pen();
+        p1.setSize(10);
+        p1.setColor("black");
+        System.out.println(p1.getSize() + " " + p1.getColor());
+
+    }
+}
+
+class Pen {
+    private int size;
+    private String color;
+
+    void setSize(int newSize) {
+        size = newSize;
+
+    }
+
+    int getSize() {
+        return this.size;
+    }
+
+    void setColor(String newColor) {
+        color = newColor;
+    }
+
+    String getColor() {
+        return this.color;
+    }
+
+}
