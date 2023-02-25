@@ -1,0 +1,10 @@
+class Solution {
+    static String revStr(String S) {
+        // code here
+        String reversedStr="";
+        for(int i=S.length()-1;i>=0;i--){
+            reversedStr=reversedStr+S.charAt(i);
+        }
+        return reversedStr;
+    }
+}
